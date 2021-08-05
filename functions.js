@@ -119,3 +119,17 @@ function simpleMergeArrays( ...arrays) {
   return arrays.flat();
 }
 // console.log(simpleMergeArrays([true, true], [1, 2], ['a', 'b']));
+
+// Write a function that takes a string and an object with two properties as arguments
+// It should return the value of the property with key equal to the value of the string
+function objectString(obj, str) {
+  for (let key in obj) {
+    if (key === str) {
+      return (obj[key]);
+    }
+  }
+}
+function simpleObjectString(obj, key) {
+  return obj[key];
+}
+objectString({  continent: 'Asia',  country: 'Japan'}, 'continent')
